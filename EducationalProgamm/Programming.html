@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Инспектор отдела кадров</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+</head>
+<body>
+<!-- ==================================== Header ====================================== -->
+<header>
+    <div class="logo"></div>
+    <div class="contacts">
+        <ul>
+            <li>
+                <img src="../public/images/logo/phone-call.svg" />
+                <div>+7(3022)35-72-15</div>
+            </li>
+            <li>
+                <img src="../public/images/logo/phone-call.svg" />
+                <div>35-81-87</div>
+            </li>
+        </ul>
+    </div>
+</header>
+<!-- ==================================== End Header ================================== -->
+
+<!-- ==================================== Navigation Bar ============================== -->
+<div class="nav-bar-placeholder"></div>
+<div class="navigation-bar" id="fixed-bar">
+    <div class="nav-bar-carcass">
+        <ul class="nav-menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li class="active">
+                <a href="">Образовательные программы</a>
+                <ul class="sub-menu">
+                    <li><a href="">Базовый курс поставщика</a></li>
+                    <li><a href="">Оператор "1C: Управление торговлей"</a></li>
+                    <li><a href="">Бухгалтер со знанием программы "1C: Бухгалтерия"</a></li>
+                    <li><a href="">Инспектор отдела кадров со знанием "1С: Зарплата и управление персоналом"</a></li>
+                    <li><a href="">Сметное дело в строительстве + ПК ГрандСмета</a></li>
+                    <li><a href="">Администрирование и программирование в 1C</a></li>
+                    <li><a href="">Графика, Дизайн, Вёрстка</a></li>
+                    <li><a href="">Компьютерные курсы для пожилых людей</a></li>
+                    <li><a href="">Ремонт компьютерной техники администрирование сетей</a></li>
+                    <li><a href="">Пользователь ПЭВМ</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Расписание занятий</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li>
+                <a href="#">Документы</a>
+                <ul class="sub-menu">
+                    <li><a href="">Преподовательский состав</a></li>
+                    <li><a href="">Дипломы и сертификаты</a></li>
+                    <li><a href="">Документы ЧОУ УМЦ ДПО "Гранд"</a></li>
+                    <li><a href="">Образовательные программы</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ==================================== End Navigation Bar ========================== -->
+
+<!-- ==================================== Body ========================================== -->
+<main>
+    <div class="page-title">
+        Администрирование и программирование в 1С
+    </div>
+
+    <div class="content">
+        <div class="content-carcass">
+            <div class="containers parent">
+                <div class="left-side"><img src="../public/images/1C-2.png" alt="1C" style="float: left; width: 150px; margin-top: 25px;" hspace="20"/></div>
+                <div class="right-side">
+                    <h2>Курс предназначен для слушателей, планирующих изучить основы конфигурирования и программирования в системе «1C:Предприятие 8». Знания, полученные по окончании курсов дают возможность выпускнику устанавливать, обновлять и администрировать любую конфигурацию, платформы «1С:Предприятие 8», прикладные решения 1С , а также серверы защиты. Вы сможете легко реализовать поставленные цели по редактированию конфигураций 1С, добавлять и изменять любые формы и отчеты, составлять запросы, программировать и сопровождать 1С.</h2>
+                </div>
+            </div>
+
+            <h2>Разделы обучения:</h2>
+            <ul>
+                <li>Общий вид системы. Работа с интерфейсами.</li>
+                <li>Прикладные объекты системы: справочники, константы, документы, обработки.</li>
+                <li>Язык программирования 1С.</li>
+                <li>Ведение оперативного учета с использованием регистров накопления. Работа с запросами в 1С.</li>
+                <li>Ведение бухгалтерского учета, работа с регистрами в бухгалтерии, построение отчетов с использованием конструктора.</li>
+                <li>Сложные периодические расчеты и регистры расчета (в т.ч. расчет и начисление заработной платы).</li>
+                <li>Работа с отчетами, использование компоновки данных.</li>
+                <li>Бизнес процессы.</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<!-- ==================================== End Body ====================================== -->
+
+<!-- ==================================== Footer ======================================== -->
+<footer>
+    <div class="footer-carcass">
+        <div class="footer">ЧОУ УМЦ ДПО "Гранд"</div>
+        <div class="footer-grid">
+            <ul>
+                <li>
+                    <div class="image"><img src="../public/images/logo/email.svg"/></div>
+                    <div class="content">chitagrand@mail.ru</div>
+                </li>
+                <li>
+                    <div class="image"><img src="../public/images/logo/footer-phone.svg"/></div>
+                    <div class="content">+7 (3022) 35-81-87</div>
+                </li>
+                <li>
+                    <div class="image"><img src="../public/images/logo/printer-.svg" /></div>
+                    <div class="content">+7 (3022) 35-72-15</div>
+                </li>
+            </ul>
+        </div>
+        <div class="copy-right">&copy; 2016 Все права защищены</div>
+    </div>
+</footer>
+<!-- ==================================== End Footer ==================================== -->
+
+<script src="../public/js/jquery-3.1.0.min.js"></script>
+<script>
+    var FixedBar = $('#fixed-bar');
+
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if($(window).scrollTop() >= 150) {
+                $(FixedBar).addClass('sticky');
+            } else {
+                $(FixedBar).removeClass('sticky');
+            }
+        });
+    });
+</script>
+</body>
+</html>

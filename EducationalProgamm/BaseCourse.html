@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head lang="ru">
+    <meta charset="UTF-8">
+    <title>Grand</title>
+    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
+</head>
+<body>
+<!-- ==================================== Header ====================================== -->
+<header>
+    <div class="logo"></div>
+    <div class="contacts">
+        <ul>
+            <li>
+                <img src="../public/images/logo/phone-call.svg" />
+                <div>+7(3022)35-72-15</div>
+            </li>
+            <li>
+                <img src="../public/images/logo/phone-call.svg" />
+                <div>35-81-87</div>
+            </li>
+        </ul>
+    </div>
+</header>
+<!-- ==================================== End Header ================================== -->
+
+<!-- ==================================== Navigation Bar ============================== -->
+<div class="nav-bar-placeholder"></div>
+<div class="navigation-bar" id="fixed-bar">
+    <div class="nav-bar-carcass">
+        <ul class="nav-menu">
+            <li><a href="../index.html">Главная</a></li>
+            <li class="active">
+                <a href="">Образовательные программы</a>
+                <ul class="sub-menu">
+                    <li><a href="">Базовый курс поставщика</a></li>
+                    <li><a href="">Оператор "1C: Управление торговлей"</a></li>
+                    <li><a href="">Бухгалтер со знанием программы "1C: Бухгалтерия"</a></li>
+                    <li><a href="">Инспектор отдела кадров со знанием "1С: Зарплата и управление персоналом"</a></li>
+                    <li><a href="">Сметное дело в строительстве + ПК ГрандСмета</a></li>
+                    <li><a href="">Администрирование и программирование в 1C</a></li>
+                    <li><a href="">Графика, Дизайн, Вёрстка</a></li>
+                    <li><a href="">Компьютерные курсы для пожилых людей</a></li>
+                    <li><a href="">Ремонт компьютерной техники администрирование сетей</a></li>
+                    <li><a href="">Пользователь ПЭВМ</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Расписание занятий</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li>
+                <a href="#">Документы</a>
+                <ul class="sub-menu">
+                    <li><a href="">Преподовательский состав</a></li>
+                    <li><a href="">Дипломы и сертификаты</a></li>
+                    <li><a href="">Документы ЧОУ УМЦ ДПО "Гранд"</a></li>
+                    <li><a href="">Образовательные программы</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<!-- ==================================== End Navigation Bar ========================== -->
+
+<!-- ==================================== Body ========================================== -->
+<main>
+    <div class="page-title">
+        Базовый курс поставщика
+    </div>
+
+    <div class="content">
+        <div class="content-carcass">
+            <div class="h2">"Участие в госзакупках (44-ФЗ). Правовые нормы и практика участия в открытом аукционе на площадке РТС-тендер"</div>
+            <img src="../public/images/RTCTender.jpg" alt="Тендер РТС" style="float: left;"/>
+            <h2>1. Основы участия в госзакупках.</h2>
+            <ul class="some-list">
+                <li>Что такое Контрактная система: обзор закона 44-ФЗ.</li>
+                <li>Основные требования к участию и участникам КС.</li>
+                <li>ЕИС. Поиск закупок.</li>
+                <li>Алгоритм участия в электронном аукционе от получения ЭЦп до заключения контракта.</li>
+            </ul>
+            <h2>2. Практическая работа на торговой площадке РТС-тендер.</h2>
+            <ul>
+                <li>Функционал площадки РТС-тендер.</li>
+                <li>Регистрация и аккредитация. Порядок работы в закрытой части системы (личный кабинет).</li>
+                <li>Заполнение и подача заявок на участие в аукционе.</li>
+                <li>Процедура аукциона. Правила подачи ценовых предложений. Разбор типичных ошибок.</li>
+                <li>Публикация итогового протокола. Сроки в соответствии с Законом о контрактной системе.</li>
+                <li>Заключение государственного контракта. Документооборот при заключении контракта.</li>
+            </ul>
+        </div>
+    </div>
+</main>
+<!-- ==================================== End Body ====================================== -->
+
+<!-- ==================================== Footer ======================================== -->
+<footer>
+    <div class="footer-carcass">
+        <div class="footer">ЧОУ УМЦ ДПО "Гранд"</div>
+        <div class="footer-grid">
+            <ul>
+                <li>
+                    <div class="image"><img src="../public/images/logo/email.svg"/></div>
+                    <div class="content">chitagrand@mail.ru</div>
+                </li>
+                <li>
+                    <div class="image"><img src="../public/images/logo/footer-phone.svg"/></div>
+                    <div class="content">+7 (3022) 35-81-87</div>
+                </li>
+                <li>
+                    <div class="image"><img src="../public/images/logo/printer-.svg" /></div>
+                    <div class="content">+7 (3022) 35-72-15</div>
+                </li>
+            </ul>
+        </div>
+        <div class="copy-right">&copy; 2016 Все права защищены</div>
+    </div>
+</footer>
+<!-- ==================================== End Footer ==================================== -->
+
+<script src="../public/js/jquery-3.1.0.min.js"></script>
+<script>
+    var FixedBar = $('#fixed-bar');
+
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if($(window).scrollTop() >= 150) {
+                $(FixedBar).addClass('sticky');
+            } else {
+                $(FixedBar).removeClass('sticky');
+            }
+        });
+    });
+</script>
+</body>
+</html>
